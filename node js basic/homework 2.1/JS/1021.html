@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> learning JavaScript</title>
+        <link rel="stylesheet" href="style.css" />
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    </head>
+    <body>
+        <div class="header">
+            <h1 id='heading'>Learning Javascript</h1>
+            <p>At FrauenLoop</p>
+        </div>
+​
+        <div class="container">
+            <h1 id="time"></h1>
+            <button onClick="showDate()">Show Date</button>
+        </div>
+
+        <div id="thing"> Hello </div>
+        <button id="thing2"> Hello HELLO </botton>
+
+        
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script>
+        	//var number1 = 20;
+        	//alert('the number is ' + number1);
+        	//var number2 = 30;
+        	//alert(number1 + number2);
+        	//var colors = ['red', 'blue', 'green'];
+        	//colors[3] = 'orange';    
+        	//alert (colors);
+        	//alert (colors.length);
+             for (var i=0; i<10; i++){
+             	console.log(i);
+             }
+             var stuff = ["pasta", "pizza","wine"];
+             console.log(stuff);
+
+             for (var key=0; key<stuff.length; key=key+1) {
+             	console.log("Position " + key + " has a value " + stuff[key]);
+             }
+
+             $("#thing").append("<h1>hello world</h1>");
+             $("#thing").append('<img src="https://images.pexels.com/photos/3076899/pexels-photo-3076899.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"  class="img-fluid"  />');
+             
+             $("#thing2").on("click", function(){
+             	alert("The button was clicked") ; 
+             	$("#thing").append('<img src="https://images.pexels.com/photos/3076899/pexels-photo-3076899.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"  class="img-fluid"  />');
+
+             });
+             
+        </script>
+    </body>
+</html>
